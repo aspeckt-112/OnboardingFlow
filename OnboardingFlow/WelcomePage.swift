@@ -7,11 +7,12 @@ struct WelcomePage: View {
     VStack {
       RoundedRectangle(cornerRadius: 30)
             .frame(width: 150, height: 150)
-            .foregroundStyle(.tint
+            .foregroundStyle(.tint)
 
       Text("Welcome to my App!")
         .font(.title)
         .fontWeight(.semibold)
+        .padding()
         .border(.black, width: 1.5)
 
       Text("Description text")
