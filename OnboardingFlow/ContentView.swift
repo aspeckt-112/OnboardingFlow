@@ -3,18 +3,19 @@
 import SwiftUI
 
 let graidentColors: [Color] = [
-    .gradientTop,
-    .gradientBottom
+  .gradientTop,
+  .gradientBottom,
 ]
 
 struct ContentView: View {
   var body: some View {
-      TabView {
-          WelcomePage()
-          FeaturesPage()
-      }
-      .background(Gradient(colors:  graidentColors))
-      .tabViewStyle(.page)
+    TabView {
+      WelcomePage()
+      FeaturesPage()
+    }
+    .background(Gradient(colors: graidentColors))
+    .tabViewStyle(.page)
+    .foregroundStyle(.white)
   }
 }
 
